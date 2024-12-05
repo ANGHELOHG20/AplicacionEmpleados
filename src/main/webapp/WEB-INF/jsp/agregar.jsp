@@ -4,37 +4,37 @@
 
 <div class="container">
     <div class="text-center"
-         style="margin: 30px;">
+         style="margin: 30px; background-color: lightgreen;">
         <h3>Agregar Empleado</h3>
     </div>
-    <form>
+    <form action="${urlAgregar}" modelAttribute="empleadoForma" method="post">
         <div class="mb-3">
             <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre">
+            <input type="text" class="form-control" id="nombre" name="nombre" required="true">
         </div>
         <div class="mb-3">
             <label for="departamento" class="form-label">Departamento</label>
-            <input type="text" class="form-control" id="departamento">
+            <input type="text" class="form-control" id="departamento" name="departamento" required="true">
         </div>
         <div class="mb-3">
             <label for="puesto" class="form-label">Puesto</label>
-            <input type="text" class="form-control" id="puesto">
+            <input type="text" class="form-control" id="puesto" name="puesto" required="true">
         </div>
         <div class="mb-3">
             <label for="telefono" class="form-label">Telefono</label>
-            <input type="text" class="form-control" id="telefono">
+            <input type="text" class="form-control" id="telefono" name="telefono" required="true">
         </div>
         <div class="mb-3">
             <label for="correo" class="form-label">Correo</label>
-            <input type="text" class="form-control" id="correo">
+            <input type="text" class="form-control" id="correo" name="correo" required="true">
         </div>
         <div class="mb-3">
             <label for="sueldo" class="form-label">Sueldo</label>
-            <input type="number" step="any" class="form-control" id="sueldo">
+            <input type="number" step="any" class="form-control" id="sueldo" name="sueldo" required="true">
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-warning btn-sm me-3">Agregar</button>
-            <a href="/empleados" class="btn btn-danger btn-sm">Regresar</a>
+            <a href="${urlInicio}" class="btn btn-danger btn-sm">Regresar</a>
         </div>
     </form>
 </div>
